@@ -5,14 +5,14 @@
  */
 package view.switching;
 
-import controller.BillerEntriProdukSwitchingController;
+import controller.SwitchingEntriProdukSwitchingController;
 
 /**
  *
  * @author lenovo
  */
 public class panelEntriProdukSwitching extends javax.swing.JPanel {
-    BillerEntriProdukSwitchingController control = new BillerEntriProdukSwitchingController();
+    SwitchingEntriProdukSwitchingController control = new SwitchingEntriProdukSwitchingController();
     /**
      * Creates new form panelEntriProdukSwitching
      */

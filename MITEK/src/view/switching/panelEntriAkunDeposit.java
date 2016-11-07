@@ -5,17 +5,23 @@
  */
 package view.switching;
 
+import controller.SwitchingEntriAkunDepositController;
+
 /**
  *
  * @author lenovo
  */
 public class panelEntriAkunDeposit extends javax.swing.JPanel {
-
+    SwitchingEntriAkunDepositController control = new SwitchingEntriAkunDepositController();
+    
     /**
      * Creates new form panelEntriAkunDeposit
      */
     public panelEntriAkunDeposit() {
         initComponents();
+        control.switching(this);
+        control.grupsaldo(this);
+        
     }
 
     /**
@@ -36,12 +42,6 @@ public class panelEntriAkunDeposit extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel4, org.openide.util.NbBundle.getMessage(panelEntriAkunDeposit.class, "panelEntriAkunDeposit.jLabel4.text")); // NOI18N
-
-        namaswitching.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaswitchingActionPerformed(evt);
-            }
-        });
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel6, org.openide.util.NbBundle.getMessage(panelEntriAkunDeposit.class, "panelEntriAkunDeposit.jLabel6.text")); // NOI18N
 
@@ -92,15 +92,8 @@ public class panelEntriAkunDeposit extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void namaswitchingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaswitchingActionPerformed
-//        JComboBox combo = (JComboBox) evt.getSource();
-//        if(combo.isValid()){
-//            control.subproduk(this);
-//        }
-    }//GEN-LAST:event_namaswitchingActionPerformed
-
     private void btnsimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsimpanActionPerformed
-        //control.simpan(this);
+        control.simpan(this);
     }//GEN-LAST:event_btnsimpanActionPerformed
 
 

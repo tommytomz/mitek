@@ -9,15 +9,15 @@ import config.Main;
 import function.Params;
 import function.ValueComboBox;
 import javax.swing.JOptionPane;
-import model.BillerEntriProdukSwitchingModel;
+import model.SwitchingEntriProdukSwitchingModel;
 import view.switching.panelEntriProdukSwitching;
 
 /**
  *
  * @author lenovo
  */
-public class BillerEntriProdukSwitchingController {
-    BillerEntriProdukSwitchingModel model = new BillerEntriProdukSwitchingModel();
+public class SwitchingEntriProdukSwitchingController {
+    SwitchingEntriProdukSwitchingModel model = new SwitchingEntriProdukSwitchingModel();
     
     public void subproduk(panelEntriProdukSwitching inframe){
         

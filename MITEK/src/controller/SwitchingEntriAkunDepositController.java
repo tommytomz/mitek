@@ -9,17 +9,17 @@ import config.Main;
 import function.Params;
 import function.ValueComboBox;
 import javax.swing.JOptionPane;
-import model.BillerEntriBentukDepositModel;
-import view.biller.panelEntriBentukDeposit;
+import model.SwitchingEntriAkunDepositModel;
+import view.switching.panelEntriAkunDeposit;
 
 /**
  *
  * @author lenovo
  */
-public class BillerEntriBentukDepositController {
-    BillerEntriBentukDepositModel model = new BillerEntriBentukDepositModel();
+public class SwitchingEntriAkunDepositController {
+    SwitchingEntriAkunDepositModel model = new SwitchingEntriAkunDepositModel();
     
-    public void switching(panelEntriBentukDeposit inframe){
+    public void switching(panelEntriAkunDeposit inframe){
         
         model.combobox      = inframe.namaswitching;
         model.namespace     = "switching";
@@ -33,7 +33,7 @@ public class BillerEntriBentukDepositController {
         
     }
     
-    public void grupsaldo(panelEntriBentukDeposit inframe){
+    public void grupsaldo(panelEntriAkunDeposit inframe){
         
         model.combobox      = inframe.grupsaldo;
         model.namespace     = "grupsaldo";
@@ -47,10 +47,11 @@ public class BillerEntriBentukDepositController {
         
     }
     
-    public void simpan(panelEntriBentukDeposit inframe){
+    public void simpan(panelEntriAkunDeposit inframe){
         
         ValueComboBox valueswitching = (ValueComboBox) inframe.namaswitching.getSelectedItem();
         ValueComboBox valuegrupsaldo = (ValueComboBox) inframe.grupsaldo.getSelectedItem();
+
         
         model.namespace     = "simpan";
         model.params        = new Params[]{
@@ -65,11 +66,10 @@ public class BillerEntriBentukDepositController {
         if(ok[0].equals("1")){
             JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan", "Sukses", 1);
             inframe.namaswitching.setSelectedItem(0);
-            inframe.grupsaldo.setSelectedIndex(0);
+            inframe.grupsaldo.setSelectedItem(0);
             
         }else{
             JOptionPane.showMessageDialog(inframe, ok[1], "Gagal", 0);
         }
-        
     }
 }

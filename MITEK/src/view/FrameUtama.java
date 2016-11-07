@@ -27,6 +27,7 @@ import view.pegawai.panelEntriPegawai;
 import view.pegawai.panelHakAksesPegawai;
 import view.pegawai.panelResetSandiPegawai;
 import view.rekondana.panelEntriDepositSwitching;
+import view.switching.panelEntriAkunDeposit;
 
 /**
  *
@@ -294,9 +295,6 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Entri Sub Produk")){
                     addTab(tabpage, dtdm, new panelEntriSubProduk(), null, "Entri Sub Produk", "Entri Sub Produk");
                 }
-                if(namanode.equals("Entri Bentuk Deposit")){
-                    addTab(tabpage, dtdm, new panelEntriBentukDeposit(), null, "Entri Bentuk Deposit", "Entri Bentuk Deposit");
-                }
                 if(namanode.equals("Entri Fee Mibis")){
                     addTab(tabpage, dtdm, new panelEntriFeeMibis(), null, "Entri Fee Mibis", "Entri Fee Mibis");
                 }
@@ -325,7 +323,7 @@ public class FrameUtama extends javax.swing.JFrame {
                 
                 //switching
                 if(namanode.equals("Entri Akun Deposit")){
-                    addTab(tabpage, dtdm, new panelEntriSwitching(), null, "Entri Akun Deposit", "Entri Akun Deposit");
+                    addTab(tabpage, dtdm, new panelEntriAkunDeposit(), null, "Entri Akun Deposit", "Entri Akun Deposit");
                 }
                 if(namanode.equals("Entri Produk Switching")){
                     addTab(tabpage, dtdm, new panelEntriProdukSwitching(), null, "Entri Produk Switching", "Entri Produk Switching");

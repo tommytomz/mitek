@@ -14,15 +14,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 import javax.xml.bind.DatatypeConverter;
-import model.BillerEntriSwitchingModel;
+import model.SwitchingEntriSwitchingModel;
 import view.switching.panelEntriSwitching;
 
 /**
  *
  * @author lenovo
  */
-public class BillerEntriSwitchingController {
-    BillerEntriSwitchingModel model = new BillerEntriSwitchingModel();
+public class SwitchingEntriSwitchingController {
+    SwitchingEntriSwitchingModel model = new SwitchingEntriSwitchingModel();
     
     public void simpan(panelEntriSwitching inframe){
         try {

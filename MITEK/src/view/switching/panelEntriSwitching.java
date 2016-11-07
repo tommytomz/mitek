@@ -5,7 +5,7 @@
  */
 package view.switching;
 
-import controller.BillerEntriSwitchingController;
+import controller.SwitchingEntriSwitchingController;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -15,7 +15,7 @@ import javax.swing.JFileChooser;
  * @author lenovo
  */
 public class panelEntriSwitching extends javax.swing.JPanel {
-    BillerEntriSwitchingController control = new BillerEntriSwitchingController();
+    SwitchingEntriSwitchingController control = new SwitchingEntriSwitchingController();
     /**
      * Creates new form panelEntriSwitching
      */

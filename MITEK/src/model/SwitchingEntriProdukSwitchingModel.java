@@ -14,16 +14,32 @@ import javax.swing.JComboBox;
  *
  * @author lenovo
  */
-public class BillerEntriBentukDepositModel {
+public class SwitchingEntriProdukSwitchingModel {
     public JComboBox combobox;
     public String namespace;
     public Params params[];
     public String kolom[];
     
+    public void subproduk(){
+        
+        SoapMitek sm = new SoapMitek();
+        String urlxml = "http://"+Main.host+"/mitek/switching/entriprodukswitching.php";
+        sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
+        
+    }
+    
     public void switching(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entribentukdeposit.php";
+        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
+        sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
+        
+    }
+    
+    public void bank(){
+        
+        SoapMitek sm = new SoapMitek();
+        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -31,7 +47,7 @@ public class BillerEntriBentukDepositModel {
     public void grupsaldo(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entribentukdeposit.php";
+        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -39,7 +55,7 @@ public class BillerEntriBentukDepositModel {
     public String [] simpan(){
      
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entribentukdeposit.php";
+        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
         String [] data = sm.sendSoap(null, urlxml, namespace, params, kolom);
         return data;
     }

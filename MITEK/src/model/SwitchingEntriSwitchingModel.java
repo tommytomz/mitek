@@ -13,7 +13,7 @@ import function.Params;
  *
  * @author lenovo
  */
-public class BillerEntriSwitchingModel {
+public class SwitchingEntriSwitchingModel {
     public String namespace;
     public Params params[];
     public String kolom[];
