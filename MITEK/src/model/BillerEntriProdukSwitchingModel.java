@@ -23,7 +23,7 @@ public class BillerEntriProdukSwitchingModel {
     public void subproduk(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
+        String urlxml = "http://"+Main.host+"/mitek/switching/entriprodukswitching.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }

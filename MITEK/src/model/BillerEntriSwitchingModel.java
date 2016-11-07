@@ -20,7 +20,7 @@ public class BillerEntriSwitchingModel {
     
     public String [] simpan(){
         SoapMitek sm = new SoapMitek();
-        String urlxml  = "http://"+Main.host+"/mitek/biller/entriswitching.php";
+        String urlxml  = "http://"+Main.host+"/mitek/switching/entriswitching.php";
         String data [] = sm.sendSoap(null, urlxml, namespace, params, kolom);
         return data;
     }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.biller;
+package view.switching;
 
 import controller.BillerEntriSwitchingController;
 import java.awt.image.BufferedImage;

@@ -10,7 +10,7 @@ import function.Params;
 import function.ValueComboBox;
 import javax.swing.JOptionPane;
 import model.BillerEntriProdukSwitchingModel;
-import view.biller.panelEntriProdukSwitching;
+import view.switching.panelEntriProdukSwitching;
 
 /**
  *

@@ -15,7 +15,7 @@ import java.io.IOException;
 import javax.swing.JOptionPane;
 import javax.xml.bind.DatatypeConverter;
 import model.BillerEntriSwitchingModel;
-import view.biller.panelEntriSwitching;
+import view.switching.panelEntriSwitching;
 
 /**
  *

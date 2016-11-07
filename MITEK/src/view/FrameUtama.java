@@ -5,6 +5,8 @@
  */
 package view;
 
+import view.switching.panelEntriProdukSwitching;
+import view.switching.panelEntriSwitching;
 import controller.LoginController;
 import function.Menu;
 import function.ShowFrame;
