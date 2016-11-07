@@ -27,7 +27,7 @@ public class BillerDaftarProdukController {
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"RID", "NAMA PRODUK", "KODE PRODUK", "GAMBAR PRODUK", "NAMA BILLER", "KODE BILLER", "GAMBAR BILLER"};
+        model.kolom         = new String[]{"RID", "NAMA PRODUK", "KODE PRODUK", "NAMA BILLER", "KODE BILLER"};
         model.produk();
         
     }
