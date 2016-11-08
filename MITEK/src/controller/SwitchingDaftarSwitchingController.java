@@ -27,7 +27,7 @@ public class SwitchingDaftarSwitchingController {
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"RID", "NAMA", "KODE"};
+        model.kolom         = new String[]{"NAMA", "KODE"};
         model.switching();
         
     }

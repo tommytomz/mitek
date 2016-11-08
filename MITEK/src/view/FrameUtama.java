@@ -168,6 +168,8 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Akun Deposit");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Grup Saldo");
+        treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Switching");
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Produk Switching");
@@ -348,6 +350,9 @@ public class FrameUtama extends javax.swing.JFrame {
                 }
                 if(namanode.equals("Daftar Produk Switching")){
                     addTab(tabpage, dtdm, new panelDaftarProdukSwitching(), null, "Daftar Produk Switching", "Daftar Produk Switching");
+                }
+                if(namanode.equals("Daftar Grup Saldo")){
+                    addTab(tabpage, dtdm, new panelDaftarGrupSaldo(), null, "Daftar Grup Saldo", "Daftar Grup Saldo");
                 }
                 
                 //rekon dana

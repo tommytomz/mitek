@@ -27,7 +27,7 @@ public class SwitchingDaftarAkunDepositController {
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"RID", "NAMA SWITCHING", "KODE SWITCHING", "NAMA GRUP"};
+        model.kolom         = new String[]{"NAMA SWITCHING", "KODE SWITCHING", "NAMA GRUP", "SALDO"};
         model.akundeposit();
         
     }

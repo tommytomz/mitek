@@ -7,28 +7,28 @@ package controller;
 
 import config.Main;
 import function.Params;
-import model.SwitchingDaftarProdukSwitchingModel;
-import view.switching.panelDaftarProdukSwitching;
+import model.SwitchingDaftarGrupSaldoModel;
+import view.switching.panelDaftarGrupSaldo;
 
 /**
  *
  * @author lenovo
  */
-public class SwitchingDaftarProdukSwitchingController {
-    SwitchingDaftarProdukSwitchingModel model = new SwitchingDaftarProdukSwitchingModel();
+public class SwitchingDaftarGrupSaldoController {
+    SwitchingDaftarGrupSaldoModel model = new SwitchingDaftarGrupSaldoModel();
     
-    public void produkswitching(panelDaftarProdukSwitching inframe){
+    public void grupsaldo(panelDaftarGrupSaldo inframe){
         
         model.progresbar    = null;
-        model.table         = inframe.tabelprodukswitching;
-        model.namespace     = "produkswitching";
+        model.table         = inframe.tabelgrupsaldo;
+        model.namespace     = "grupsaldo";
         model.params        = new Params[]{
                                           new Params("rididuser", Main.iduser),
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"NAMA SWITCHING", "NAMA SUB PRODUK", "NAMA GRUP SALDO", "NAMA BANK"};
-        model.produkswitching();
+        model.kolom         = new String[]{"NAMA"};
+        model.grupsaldo();
         
     }
 }
