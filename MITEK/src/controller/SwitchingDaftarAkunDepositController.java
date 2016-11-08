@@ -5,10 +5,30 @@
  */
 package controller;
 
+import config.Main;
+import function.Params;
+import model.SwitchingDaftarAkunDepositModel;
+import view.switching.panelDaftarAkunDeposit;
+
 /**
  *
  * @author lenovo
  */
 public class SwitchingDaftarAkunDepositController {
+    SwitchingDaftarAkunDepositModel model = new SwitchingDaftarAkunDepositModel();
     
+    public void akundeposit(panelDaftarAkunDeposit inframe){
+        
+        model.progresbar    = null;
+        model.table         = inframe.tabelakundeposit;
+        model.namespace     = "akundeposit";
+        model.params        = new Params[]{
+                                          new Params("rididuser", Main.iduser),
+                                          new Params("sesip", Main.session),
+                                          new Params("alamatp", Main.ipaddress)
+                                          };
+        model.kolom         = new String[]{"RID", "NAMA SWITCHING", "KODE SWITCHING", "NAMA GRUP"};
+        model.akundeposit();
+        
+    }
 }

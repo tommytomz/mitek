@@ -5,17 +5,20 @@
  */
 package view.switching;
 
+import controller.SwitchingDaftarAkunDepositController;
+
 /**
  *
  * @author lenovo
  */
 public class panelDaftarAkunDeposit extends javax.swing.JPanel {
-
+    SwitchingDaftarAkunDepositController control = new SwitchingDaftarAkunDepositController();
     /**
      * Creates new form panelDaftarAkunDeposit
      */
     public panelDaftarAkunDeposit() {
         initComponents();
+        control.akundeposit(this);
     }
 
     /**
