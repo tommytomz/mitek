@@ -31,7 +31,7 @@ public class SwitchingEntriProdukSwitchingModel {
     public void switching(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
+        String urlxml = "http://"+Main.host+"/mitek/switching/entriprodukswitching.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -39,7 +39,7 @@ public class SwitchingEntriProdukSwitchingModel {
     public void bank(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
+        String urlxml = "http://"+Main.host+"/mitek/switching/entriprodukswitching.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -47,7 +47,7 @@ public class SwitchingEntriProdukSwitchingModel {
     public void grupsaldo(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
+        String urlxml = "http://"+Main.host+"/mitek/switching/entriprodukswitching.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -55,7 +55,7 @@ public class SwitchingEntriProdukSwitchingModel {
     public String [] simpan(){
      
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/biller/entriprodukswitching.php";
+        String urlxml = "http://"+Main.host+"/mitek/switching/entriprodukswitching.php";
         String [] data = sm.sendSoap(null, urlxml, namespace, params, kolom);
         return data;
     }
