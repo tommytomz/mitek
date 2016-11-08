@@ -139,7 +139,7 @@ public class SoapMitek {
                     String [] value = new String[nodes.getLength()];
                     String [] label = new String[nodes.getLength()];
                     
-                    combobox.addItem(new ValueComboBox(null, "Pilih"));
+                    combobox.addItem(new ValueComboBox("-1", "Pilih"));
                     
                     for (int i = 0; i < nodes.getLength(); i++) {
                         Node node = nodes.item(i);
