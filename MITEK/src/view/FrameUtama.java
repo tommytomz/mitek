@@ -5,6 +5,7 @@
  */
 package view;
 
+import view.switching.panelEntriGrupSaldo;
 import view.switching.panelEntriProdukSwitching;
 import view.switching.panelEntriSwitching;
 import controller.LoginController;
@@ -27,7 +28,7 @@ import view.pegawai.panelEntriPegawai;
 import view.pegawai.panelHakAksesPegawai;
 import view.pegawai.panelResetSandiPegawai;
 import view.rekondana.panelEntriDepositSwitching;
-import view.switching.panelEntriAkunDeposit;
+import view.switching.*;
 
 /**
  *
@@ -289,9 +290,6 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Entri Produk Biller")){
                     addTab(tabpage, dtdm, new panelEntriProdukBiller(), null, "Entri Produk Biller", "Entri Produk Biller");
                 }
-                if(namanode.equals("Entri Grup Saldo")){
-                    addTab(tabpage, dtdm, new panelEntriGrupSaldo(), null, "Entri Grup Saldo", "Entri Grup Saldo");
-                }
                 if(namanode.equals("Entri Sub Produk")){
                     addTab(tabpage, dtdm, new panelEntriSubProduk(), null, "Entri Sub Produk", "Entri Sub Produk");
                 }
@@ -331,6 +329,10 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Entri Switching")){
                     addTab(tabpage, dtdm, new panelEntriSwitching(), null, "Entri Switching", "Entri Switching");
                 }
+                if(namanode.equals("Entri Grup Saldo")){
+                    addTab(tabpage, dtdm, new panelEntriGrupSaldo(), null, "Entri Grup Saldo", "Entri Grup Saldo");
+                }
+                
                 
                 //rekon dana
                 if(namanode.equals("Entri Deposit Switching")){

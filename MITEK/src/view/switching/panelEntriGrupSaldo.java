@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.biller;
+package view.switching;
 
-import controller.BillerEntriGrupSaldoController;
+import controller.SwitchingEntriGrupSaldoController;
 
 /**
  *
  * @author lenovo
  */
 public class panelEntriGrupSaldo extends javax.swing.JPanel {
-    BillerEntriGrupSaldoController control = new BillerEntriGrupSaldoController();
+    SwitchingEntriGrupSaldoController control = new SwitchingEntriGrupSaldoController();
     /**
      * Creates new form panelEntriGrupSaldo
      */

@@ -8,16 +8,16 @@ package controller;
 import config.Main;
 import function.Params;
 import javax.swing.JOptionPane;
-import model.BillerEntriGrupSaldoModel;
-import view.biller.panelEntriGrupSaldo;
+import model.SwitchingEntriGrupSaldoModel;
+import view.switching.panelEntriGrupSaldo;
 
 
 /**
  *
  * @author lenovo
  */
-public class BillerEntriGrupSaldoController {
-    BillerEntriGrupSaldoModel model = new BillerEntriGrupSaldoModel();
+public class SwitchingEntriGrupSaldoController {
+    SwitchingEntriGrupSaldoModel model = new SwitchingEntriGrupSaldoModel();
     
     public void simpan(panelEntriGrupSaldo inframe){
         try {
