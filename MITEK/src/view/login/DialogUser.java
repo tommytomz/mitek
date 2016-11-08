@@ -104,6 +104,10 @@ public class DialogUser extends javax.swing.JDialog {
             control.logout(flogin, futama);
             this.setVisible(false);
         }
+        else{
+            futama.treeMenu.clearSelection();
+           
+        }
     }//GEN-LAST:event_btnlogoutActionPerformed
 
     private void btngantipasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngantipasswordActionPerformed
