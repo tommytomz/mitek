@@ -27,7 +27,7 @@ public class SwitchingDaftarProdukSwitchingController {
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"RID", "NAMA SUB PRODUK", "NAMA GRUP SALDO", "NAMA SWITCHING", "NAMA BANK"};
+        model.kolom         = new String[]{"RID", "NAMA SWITCHING", "NAMA SUB PRODUK", "NAMA GRUP SALDO", "NAMA BANK"};
         model.produkswitching();
         
     }
