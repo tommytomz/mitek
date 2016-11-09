@@ -156,6 +156,8 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Sub Produk");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Harga Sub Produk");
+        treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Switching");
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Akun Deposit");
@@ -325,6 +327,9 @@ public class FrameUtama extends javax.swing.JFrame {
                 }
                 if(namanode.equals("Daftar Sub Produk")){
                     addTab(tabpage, dtdm, new panelDaftarSubProduk(), null, "Daftar Sub Produk", "Daftar Sub Produk");
+                }
+                if(namanode.equals("Daftar Harga Sub Produk")){
+                    addTab(tabpage, dtdm, new panelDaftarHargaSubProduk(), null, "Daftar Harga Sub Produk", "Daftar Harga Sub Produk");
                 }
                 
                 //switching
