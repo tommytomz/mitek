@@ -39,7 +39,7 @@ public class FrameUtama extends javax.swing.JFrame {
     LoginController control = new LoginController();
     ShowFrame sf = new ShowFrame();
     public static DefaultTabDataModel dtdm;
-
+    public String namanode;
     /**
      * Creates new form FrameUtama
      */
@@ -282,7 +282,7 @@ public class FrameUtama extends javax.swing.JFrame {
     
     private void menupegawai(){
         DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
-        String namanode = node.toString();
+        namanode = node.toString();
             if(node.isLeaf()){
                 //pegawai
                 if(namanode.equals("Data Pegawai")){
@@ -304,7 +304,7 @@ public class FrameUtama extends javax.swing.JFrame {
         //TreePath tp = treeMenu.getPathForLocation(this.getX(), this.getY());
         //if(tp!=null){
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
-            String namanode = node.toString();
+            namanode = node.toString();
             if(node.isLeaf()){
                 
                 //biller
@@ -363,7 +363,7 @@ public class FrameUtama extends javax.swing.JFrame {
     private void menuswitching(){
 
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
-            String namanode = node.toString();
+            namanode = node.toString();
             if(node.isLeaf()){
                 if(namanode.equals("Entri Akun Deposit")){
                     addTab(tabpage, dtdm, new panelEntriAkunDeposit(), null, "Entri Akun Deposit", "Entri Akun Deposit");

@@ -8,8 +8,10 @@ package view.login;
 import controller.LoginController;
 import function.ShowFrame;
 import javax.swing.JOptionPane;
+import javax.swing.tree.DefaultMutableTreeNode;
 import org.netbeans.swing.tabcontrol.TabData;
 import view.FrameUtama;
+import static view.FrameUtama.treeMenu;
 import view.pegawai.InfGantiSandi;
 import view.pegawai.panelGantiSandi;
 
@@ -105,7 +107,8 @@ public class DialogUser extends javax.swing.JDialog {
             this.setVisible(false);
         }
         else{
-            futama.treeMenu.clearSelection();
+            DefaultMutableTreeNode node = (DefaultMutableTreeNode) futama.treeMenu.getLastSelectedPathComponent();
+            futama.namanode = node.toString();
            
         }
     }//GEN-LAST:event_btnlogoutActionPerformed
