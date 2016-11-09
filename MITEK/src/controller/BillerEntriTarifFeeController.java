@@ -21,9 +21,11 @@ public class BillerEntriTarifFeeController {
     
     public void subproduk(panelEntriTarifFee inframe){
         
+        ValueComboBox valueswitching = (ValueComboBox) inframe.namaswitching.getSelectedItem();
         model.combobox      = inframe.namasubproduk;
         model.namespace     = "subproduk";
         model.params        = new Params[]{
+                                          new Params("ridswitching", valueswitching.getValue()),
                                           new Params("rididuser", Main.iduser),
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)

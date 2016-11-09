@@ -8,6 +8,7 @@ package view.biller;
 import controller.BillerEntriTarifFeeController;
 import function.FormatRupiah;
 import function.ValueComboBox;
+import javax.swing.JComboBox;
 
 /**
  *
@@ -20,17 +21,17 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
      */
     public panelEntriTarifFee() {
         initComponents();
-        control.subproduk(this);
+        
         control.switching(this);
         control.feema(this);
         
         //item debet kredit
-        debetkredit.addItem(new ValueComboBox("", "Pilih"));
+        debetkredit.addItem(new ValueComboBox("-1", "Pilih"));
         debetkredit.addItem(new ValueComboBox("d", "Debet"));
         debetkredit.addItem(new ValueComboBox("k", "Kredit"));
 
         //item cb
-        cb.addItem(new ValueComboBox("", "Pilih"));
+        cb.addItem(new ValueComboBox("-1", "Pilih"));
         cb.addItem(new ValueComboBox("langsung", "Langsung"));
         cb.addItem(new ValueComboBox("tidak langsung", "Tidak Langsung"));
         
@@ -47,17 +48,17 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
 
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        namaswitching = new javax.swing.JComboBox<>();
         btnsimpan = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         metode = new javax.swing.JComboBox();
         jLabel7 = new javax.swing.JLabel();
         harga = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        namasubproduk = new javax.swing.JComboBox();
+        namaswitching = new javax.swing.JComboBox();
         debetkredit = new javax.swing.JComboBox();
         cb = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
+        namasubproduk = new javax.swing.JComboBox();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -91,6 +92,12 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(panelEntriTarifFee.class, "panelEntriTarifFee.jLabel1.text")); // NOI18N
 
+        namaswitching.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                namaswitchingActionPerformed(evt);
+            }
+        });
+
         org.openide.awt.Mnemonics.setLocalizedText(jLabel2, org.openide.util.NbBundle.getMessage(panelEntriTarifFee.class, "panelEntriTarifFee.jLabel2.text")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -100,24 +107,26 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnsimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel2))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
                         .addGap(55, 55, 55)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cb, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(harga, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(metode, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(harga, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(debetkredit, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(namasubproduk, 0, 321, Short.MAX_VALUE)
                                 .addComponent(namaswitching, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(metode, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(debetkredit, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(0, 124, Short.MAX_VALUE))
+                                .addComponent(namasubproduk, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(cb, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnsimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(150, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -125,16 +134,16 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(namaswitching, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(namasubproduk, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(namaswitching, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(debetkredit, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(debetkredit, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(metode, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -149,7 +158,7 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addComponent(btnsimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -160,6 +169,13 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
     private void hargaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_hargaKeyReleased
        harga.setText(FormatRupiah.format(harga.getText()));
     }//GEN-LAST:event_hargaKeyReleased
+
+    private void namaswitchingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaswitchingActionPerformed
+        JComboBox combo = (JComboBox) evt.getSource();
+        if(combo.isValid()){
+            control.subproduk(this);
+        }
+    }//GEN-LAST:event_namaswitchingActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -175,6 +191,6 @@ public class panelEntriTarifFee extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     public javax.swing.JComboBox metode;
     public javax.swing.JComboBox namasubproduk;
-    public javax.swing.JComboBox<String> namaswitching;
+    public javax.swing.JComboBox namaswitching;
     // End of variables declaration//GEN-END:variables
 }

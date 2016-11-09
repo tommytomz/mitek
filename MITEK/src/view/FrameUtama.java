@@ -160,6 +160,8 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Tarif Fee");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Tarif Rp Admin");
+        treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Switching");
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Akun Deposit");
@@ -348,6 +350,9 @@ public class FrameUtama extends javax.swing.JFrame {
                 }
                 if(namanode.equals("Daftar Tarif Fee")){
                     addTab(tabpage, dtdm, new panelDaftarTarifFee(), null, "Daftar Tarif Fee", "Daftar Tarif Fee");
+                }
+                if(namanode.equals("Daftar Tarif Rp Admin")){
+                    addTab(tabpage, dtdm, new panelDaftarTarifRpAdmin(), null, "Daftar Tarif Rupiah Admin", "Daftar Tarif Rupiah Admin");
                 }
                 
             }
