@@ -183,9 +183,9 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode1.add(treeNode2);
         treeMenu.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         treeMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        treeMenu.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
-            public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
-                treeMenuValueChanged(evt);
+        treeMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                treeMenuMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(treeMenu);
@@ -270,7 +270,11 @@ public class FrameUtama extends javax.swing.JFrame {
         duser.setVisible(true);
     }//GEN-LAST:event_lbluserMouseClicked
 
-    private void treeMenuValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_treeMenuValueChanged
+    private void treeMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeMenuMouseClicked
+        menubiller();
+    }//GEN-LAST:event_treeMenuMouseClicked
+    
+    private void menubiller(){
         //TreePath tp = treeMenu.getPathForLocation(this.getX(), this.getY());
         //if(tp!=null){
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
@@ -367,8 +371,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
             
         //}
-    }//GEN-LAST:event_treeMenuValueChanged
-
+    }
     /**
      * @param args the command line arguments
      */
