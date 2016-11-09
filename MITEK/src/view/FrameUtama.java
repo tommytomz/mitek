@@ -158,6 +158,8 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Harga Sub Produk");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Tarif Fee");
+        treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Switching");
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Akun Deposit");
@@ -271,14 +273,14 @@ public class FrameUtama extends javax.swing.JFrame {
     }//GEN-LAST:event_lbluserMouseClicked
 
     private void treeMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeMenuMouseClicked
+        menupegawai();
         menubiller();
+        menuswitching();
     }//GEN-LAST:event_treeMenuMouseClicked
     
-    private void menubiller(){
-        //TreePath tp = treeMenu.getPathForLocation(this.getX(), this.getY());
-        //if(tp!=null){
-            DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
-            String namanode = node.toString();
+    private void menupegawai(){
+        DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
+        String namanode = node.toString();
             if(node.isLeaf()){
                 //pegawai
                 if(namanode.equals("Data Pegawai")){
@@ -293,6 +295,15 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Reset Sandi Pegawai")){
                     addTab(tabpage, dtdm, new panelResetSandiPegawai(), null, "Reset Sandi Pegawai", "Reset Sandi Pegawai");
                 }
+            }
+    }
+    
+    private void menubiller(){
+        //TreePath tp = treeMenu.getPathForLocation(this.getX(), this.getY());
+        //if(tp!=null){
+            DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
+            String namanode = node.toString();
+            if(node.isLeaf()){
                 
                 //biller
                 if(namanode.equals("Entri Bank")){
@@ -335,8 +346,20 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Daftar Harga Sub Produk")){
                     addTab(tabpage, dtdm, new panelDaftarHargaSubProduk(), null, "Daftar Harga Sub Produk", "Daftar Harga Sub Produk");
                 }
+                if(namanode.equals("Daftar Tarif Fee")){
+                    addTab(tabpage, dtdm, new panelDaftarTarifFee(), null, "Daftar Tarif Fee", "Daftar Tarif Fee");
+                }
                 
-                //switching
+            }
+            
+        //}
+    }
+    
+    private void menuswitching(){
+
+            DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
+            String namanode = node.toString();
+            if(node.isLeaf()){
                 if(namanode.equals("Entri Akun Deposit")){
                     addTab(tabpage, dtdm, new panelEntriAkunDeposit(), null, "Entri Akun Deposit", "Entri Akun Deposit");
                 }
@@ -364,13 +387,11 @@ public class FrameUtama extends javax.swing.JFrame {
                     addTab(tabpage, dtdm, new panelDaftarGrupSaldo(), null, "Daftar Grup Saldo", "Daftar Grup Saldo");
                 }
                 
-                //rekon dana
                 if(namanode.equals("Entri Deposit Switching")){
                     addTab(tabpage, dtdm, new panelEntriDepositSwitching(), null, "Entri Deposit Switching", "Entri Deposit Switching");
                 }
             }
-            
-        //}
+                
     }
     /**
      * @param args the command line arguments
