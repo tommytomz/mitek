@@ -166,6 +166,10 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Switching");
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Akun Deposit");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Akun Utpi");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Dep Trans");
+        treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Grup Saldo");
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Switching");
@@ -368,6 +372,9 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Entri Akun Deposit")){
                     addTab(tabpage, dtdm, new panelEntriAkunDeposit(), null, "Entri Akun Deposit", "Entri Akun Deposit");
                 }
+                if(namanode.equals("Entri Akun Utpi")){
+                    addTab(tabpage, dtdm, new panelEntriAkunUtpi(), null, "Entri Akun Utpi", "Entri Akun Utpi");
+                }
                 if(namanode.equals("Entri Produk Switching")){
                     addTab(tabpage, dtdm, new panelEntriProdukSwitching(), null, "Entri Produk Switching", "Entri Produk Switching");
                 }
@@ -376,6 +383,9 @@ public class FrameUtama extends javax.swing.JFrame {
                 }
                 if(namanode.equals("Entri Grup Saldo")){
                     addTab(tabpage, dtdm, new panelEntriGrupSaldo(), null, "Entri Grup Saldo", "Entri Grup Saldo");
+                }
+                if(namanode.equals("Entri Dep Trans")){
+                    addTab(tabpage, dtdm, new panelEntriDepTrans(), null, "Entri Dep Trans", "Entri Dep Trans");
                 }
                 
                 
