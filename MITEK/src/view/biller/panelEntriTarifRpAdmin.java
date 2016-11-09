@@ -194,6 +194,8 @@ public class panelEntriTarifRpAdmin extends javax.swing.JPanel {
 
         JComboBox combo = (JComboBox) evt.getSource();
         if(combo.isValid()){
+            ValueComboBox v = (ValueComboBox) provinsi.getSelectedItem();
+            System.out.println(v.getValue());
             control.kabupaten(this);
         }
     }//GEN-LAST:event_provinsiActionPerformed
