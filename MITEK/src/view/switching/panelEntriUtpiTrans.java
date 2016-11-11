@@ -43,7 +43,6 @@ public class panelEntriUtpiTrans extends javax.swing.JPanel {
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(panelEntriUtpiTrans.class, "panelEntriUtpiTrans.jLabel1.text")); // NOI18N
 
         nama.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        nama.setHorizontalAlignment(javax.swing.JTextField.TRAILING);
 
         btnsimpan.setBackground(new java.awt.Color(0, 51, 255));
         btnsimpan.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
