@@ -2,46 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/BillerEntriTarifRpAdminController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/BillerDaftarBillerController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelDaftarBiller.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/switching/panelDaftarSwitching.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/switching/panelDaftarProdukSwitching.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/BillerDaftarProdukController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/switching/panelDaftarAkunDeposit.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelDaftarHargaSubProduk.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/login/DialogUser.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/BillerDaftarBillerModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/SwitchingDaftarGrupSaldoModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/BillerEntriTarifRpAdminModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/config/SoapMitek.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/SwitchingDaftarAkunDepositController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelDaftarTarifRpAdmin.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/switching/panelEntriAkunDeposit.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/BillerDaftarTarifFeeModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/BillerDaftarProdukModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelDaftarSubProduk.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/SwitchingDaftarProdukSwitchingModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/FrameUtama.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/BillerDaftarTarifRpAdminController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/SwitchingDaftarSwitchingController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/BillerDaftarHargaSubProdukController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/SwitchingDaftarGrupSaldoController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelDaftarTarifFee.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/SwitchingDaftarSwitchingModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/SwitchingDaftarProdukSwitchingController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/BillerDaftarTarifRpAdminModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/switching/panelDaftarGrupSaldo.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/SwitchingEntriGrupSaldoModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/SwitchingEntriProdukSwitchingModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelDaftarProduk.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/BillerDaftarHargaSubProdukModel.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelEntriTarifRpAdmin.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/view/biller/panelEntriHargaSubProduk.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/SwitchingEntriGrupSaldoController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/controller/BillerDaftarTarifFeeController.java</file>
-            <file>file:/E:/Data%20IDO/aplikasi%20IDO/MITEK/src/model/SwitchingDaftarAkunDepositModel.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

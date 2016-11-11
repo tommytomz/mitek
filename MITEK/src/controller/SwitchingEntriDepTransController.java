@@ -50,7 +50,7 @@ public class SwitchingEntriDepTransController {
         String [] ok = model.simpan();
         if(ok[0].equals("1")){
             JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan", "Sukses", 1);
-            inframe.deptrans.setSelectedItem(0);
+            inframe.deptrans.setSelectedIndex(0);
             inframe.nama.setText("");
             
         }else{

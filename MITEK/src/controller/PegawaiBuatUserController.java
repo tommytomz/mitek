@@ -49,7 +49,7 @@ public class PegawaiBuatUserController {
         String [] ok = model.simpan();
         if(ok[0].equals("1")){
             JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan \nSandi Sementara : "+ok[2], "Sukses", 1);
-            inframe.pegawai.setSelectedItem(new ValueComboBox("", "Pilih"));
+            inframe.pegawai.setSelectedIndex(0);
             inframe.idins.setText("");
             
         }else{

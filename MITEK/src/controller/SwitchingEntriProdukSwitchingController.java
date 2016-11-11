@@ -96,10 +96,10 @@ public class SwitchingEntriProdukSwitchingController {
         String [] ok = model.simpan();
         if(ok[0].equals("1")){
             JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan", "Sukses", 1);
-            inframe.namasubproduk.setSelectedItem(0);
-            inframe.namaswitching.setSelectedItem(0);
-            inframe.namabank.setSelectedItem(0);
-            inframe.grupsaldo.setSelectedItem(0);
+            inframe.namasubproduk.setSelectedIndex(0);
+            inframe.namaswitching.setSelectedIndex(0);
+            inframe.namabank.setSelectedIndex(0);
+            inframe.grupsaldo.setSelectedIndex(0);
             
         }else{
             JOptionPane.showMessageDialog(inframe, ok[1], "Gagal", 0);

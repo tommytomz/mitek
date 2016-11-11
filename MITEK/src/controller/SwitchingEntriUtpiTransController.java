@@ -9,44 +9,48 @@ import config.Main;
 import function.Params;
 import function.ValueComboBox;
 import javax.swing.JOptionPane;
-import model.PegawaiResetSandiModel;
-import view.pegawai.panelResetSandiPegawai;
+import model.SwitchingEntriUtpiTransModel;
+import view.switching.panelEntriUtpiTrans;
 
 /**
  *
  * @author lenovo
  */
-public class PegawaiResetSandiController {
-    PegawaiResetSandiModel model = new PegawaiResetSandiModel();
+public class SwitchingEntriUtpiTransController {
+    SwitchingEntriUtpiTransModel model = new SwitchingEntriUtpiTransModel();
     
-    public void pegawai(panelResetSandiPegawai inframe){
-        model.combobox      = inframe.pegawai;
-        model.namespace     = "pegawai";
+    public void uptitrans(panelEntriUtpiTrans inframe){
+        
+        model.combobox      = inframe.uptitrans;
+        model.namespace     = "utpitrans";
         model.params        = new Params[]{
                                           new Params("rididuser", Main.iduser),
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"id", "nama", "pesan"};
-        model.pegawai();
+        model.kolom         = new String[]{"rid", "nama"};
+        model.uptitrans();
+        
     }
     
-    public void simpan(panelResetSandiPegawai inframe){
+    public void simpan(panelEntriUtpiTrans inframe){
         
-        ValueComboBox value = (ValueComboBox) inframe.pegawai.getSelectedItem();
-        model.combobox      = inframe.pegawai;
+        ValueComboBox valuesuptitrans   = (ValueComboBox) inframe.uptitrans.getSelectedItem();
+        
         model.namespace     = "simpan";
         model.params        = new Params[]{
-                                          new Params("idr", value.getValue()),
+                                          new Params("upp", valuesuptitrans.getValue()),
+                                          new Params("namap", inframe.nama.getText()),
                                           new Params("rididuser", Main.iduser),
                                           new Params("sesip", Main.session),
                                           new Params("alamatp", Main.ipaddress)
                                           };
-        model.kolom         = new String[]{"respon", "pesan", "sandio"};
+        model.kolom         = new String[]{"respon", "pesan", "sandi"};
         String [] ok = model.simpan();
         if(ok[0].equals("1")){
-            JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan \nSandi Sementara : "+ok[2], "Sukses", 1);
-            inframe.pegawai.setSelectedIndex(0);
+            JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan", "Sukses", 1);
+            inframe.uptitrans.setSelectedIndex(0);
+            inframe.nama.setText("");
             
         }else{
             JOptionPane.showMessageDialog(inframe, ok[1], "Gagal", 0);

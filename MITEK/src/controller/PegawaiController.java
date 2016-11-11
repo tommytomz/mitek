@@ -97,12 +97,12 @@ public class PegawaiController {
             if(ok[0].equals("1")){
                 JOptionPane.showMessageDialog(inpegawai, "Data berhasil di simpan", "Sukses", 1);
                 inpegawai.namapegawai.setText("");
-                inpegawai.jeniskelamin.setSelectedItem(new ValueComboBox("", "Pilih"));
+                inpegawai.jeniskelamin.setSelectedIndex(0);
                 inpegawai.tanggallahir.setDate(null);
                 inpegawai.nokontak.setText("");
                 inpegawai.noktp.setText("");
                 inpegawai.email.setText("");
-                inpegawai.provinsi.setSelectedItem(new ValueComboBox("", "Pilih"));
+                inpegawai.provinsi.setSelectedIndex(0);
                 inpegawai.kabupaten.removeAllItems();
                 inpegawai.kecamatan.removeAllItems();
                 inpegawai.kelurahan.removeAllItems();

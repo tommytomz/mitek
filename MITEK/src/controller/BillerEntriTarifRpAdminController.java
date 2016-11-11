@@ -127,7 +127,7 @@ public class BillerEntriTarifRpAdminController {
         String [] ok = model.simpan();
         if(ok[0].equals("1")){
             JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan", "Sukses", 1);
-            inframe.namasubproduk.setSelectedItem(0);
+            inframe.namasubproduk.setSelectedIndex(0);
             //inframe.daerah.setSelectedItem(0);
             
         }else{

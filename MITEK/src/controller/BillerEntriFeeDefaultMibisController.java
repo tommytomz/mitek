@@ -49,7 +49,7 @@ public class BillerEntriFeeDefaultMibisController {
         String [] ok = model.simpan();
         if(ok[0].equals("1")){
             JOptionPane.showMessageDialog(inframe, "Data berhasil di simpan", "Sukses", 1);
-            inframe.subproduk.setSelectedItem(0);
+            inframe.subproduk.setSelectedIndex(0);
             inframe.harga.setText("");
             
         }else{
