@@ -5,6 +5,8 @@
  */
 package view;
 
+import view.mitek.panelDaftarFeepp;
+import view.mitek.panelEntriFeepp;
 import view.switching.panelEntriGrupSaldo;
 import view.switching.panelEntriProdukSwitching;
 import view.switching.panelEntriSwitching;
@@ -161,6 +163,12 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Tarif Fee");
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Tarif Rp Admin");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Mitek");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Dasar Fee Produk");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Dasar Fee Produk");
         treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Switching");

@@ -7,15 +7,15 @@ package controller;
 
 import config.Main;
 import function.Params;
-import model.SwitchingDaftarFeeppModel;
-import view.switching.panelDaftarFeepp;
+import model.MitekDaftarFeeppModel;
+import view.mitek.panelDaftarFeepp;
 
 /**
  *
  * @author lenovo
  */
-public class SwitchingDaftarFeeppController {
-    SwitchingDaftarFeeppModel model = new SwitchingDaftarFeeppModel();
+public class MitekDaftarFeeppController {
+    MitekDaftarFeeppModel model = new MitekDaftarFeeppModel();
     
     public void feepp(panelDaftarFeepp inframe){
         

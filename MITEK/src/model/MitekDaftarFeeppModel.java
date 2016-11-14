@@ -15,7 +15,7 @@ import javax.swing.JTable;
  *
  * @author lenovo
  */
-public class SwitchingDaftarFeeppModel {
+public class MitekDaftarFeeppModel {
     public JProgressBar progresbar;
     public JTable table;
     public String namespace;

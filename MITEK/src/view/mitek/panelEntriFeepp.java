@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.switching;
+package view.mitek;
 
-import controller.SwitchingEntriFeeppController;
+import controller.MitekEntriFeeppController;
 
 /**
  *
  * @author lenovo
  */
 public class panelEntriFeepp extends javax.swing.JPanel {
-    SwitchingEntriFeeppController control = new SwitchingEntriFeeppController();
+    MitekEntriFeeppController control = new MitekEntriFeeppController();
     /**
      * Creates new form panelEntriFeep
      */

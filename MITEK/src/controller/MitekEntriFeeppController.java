@@ -9,15 +9,15 @@ import config.Main;
 import function.Params;
 import function.ValueComboBox;
 import javax.swing.JOptionPane;
-import model.SwitchingEntriFeeppModel;
-import view.switching.panelEntriFeepp;
+import model.MitekEntriFeeppModel;
+import view.mitek.panelEntriFeepp;
 
 /**
  *
  * @author lenovo
  */
-public class SwitchingEntriFeeppController {
-    SwitchingEntriFeeppModel model = new SwitchingEntriFeeppModel();
+public class MitekEntriFeeppController {
+    MitekEntriFeeppModel model = new MitekEntriFeeppModel();
     
     public void subproduk(panelEntriFeepp inframe){
         

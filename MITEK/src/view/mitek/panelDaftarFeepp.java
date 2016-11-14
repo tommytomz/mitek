@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.switching;
+package view.mitek;
 
-import controller.SwitchingDaftarFeeppController;
+import controller.MitekDaftarFeeppController;
 
 /**
  *
  * @author lenovo
  */
 public class panelDaftarFeepp extends javax.swing.JPanel {
-    SwitchingDaftarFeeppController control = new SwitchingDaftarFeeppController();
+    MitekDaftarFeeppController control = new MitekDaftarFeeppController();
     /**
      * Creates new form panelDaftarFeepp
      */

@@ -14,7 +14,7 @@ import javax.swing.JComboBox;
  *
  * @author lenovo
  */
-public class SwitchingEntriFeeppModel {
+public class MitekEntriFeeppModel {
     public JComboBox combobox;
     public String namespace;
     public Params params[];
