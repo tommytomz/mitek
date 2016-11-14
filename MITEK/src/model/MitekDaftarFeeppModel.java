@@ -25,7 +25,7 @@ public class MitekDaftarFeeppModel {
     public void feepp(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/switching/daftarfeepp.php";
+        String urlxml = "http://"+Main.host+"/mitek/mitek/daftarfeepp.php";
         sm.getDataSoap(progresbar, table, urlxml, namespace, params, kolom);
     }
 }

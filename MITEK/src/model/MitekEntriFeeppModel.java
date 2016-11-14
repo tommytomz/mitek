@@ -23,7 +23,7 @@ public class MitekEntriFeeppModel {
     public void subproduk(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/switching/entrifeepp.php";
+        String urlxml = "http://"+Main.host+"/mitek/mitek/entrifeepp.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -31,7 +31,7 @@ public class MitekEntriFeeppModel {
     public void feemap(){
         
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/switching/entrifeepp.php";
+        String urlxml = "http://"+Main.host+"/mitek/mitek/entrifeepp.php";
         sm.getSoapToComboBox(combobox, urlxml, namespace, params, kolom);
         
     }
@@ -39,7 +39,7 @@ public class MitekEntriFeeppModel {
     public String [] simpan(){
      
         SoapMitek sm = new SoapMitek();
-        String urlxml = "http://"+Main.host+"/mitek/switching/entrifeepp.php";
+        String urlxml = "http://"+Main.host+"/mitek/mitek/entrifeepp.php";
         String [] data = sm.sendSoap(null, urlxml, namespace, params, kolom);
         return data;
     }
