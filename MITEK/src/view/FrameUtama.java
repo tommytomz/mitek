@@ -31,6 +31,7 @@ import view.pegawai.panelHakAksesPegawai;
 import view.pegawai.panelResetSandiPegawai;
 import view.rekondana.panelEntriDepositSwitching;
 import view.switching.*;
+import view.mitek.*;
 
 /**
  *
@@ -168,6 +169,8 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Mitek");
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Dasar Fee Produk");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Grup Saldo Mitek");
+        treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Dasar Fee Produk");
         treeNode2.add(treeNode3);
         treeNode1.add(treeNode2);
@@ -295,6 +298,7 @@ public class FrameUtama extends javax.swing.JFrame {
     private void treeMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeMenuMouseClicked
         menupegawai();
         menubiller();
+        menumitek();
         menuswitching();
     }//GEN-LAST:event_treeMenuMouseClicked
     
@@ -378,6 +382,27 @@ public class FrameUtama extends javax.swing.JFrame {
         //}
     }
     
+    private void menumitek(){
+        //TreePath tp = treeMenu.getPathForLocation(this.getX(), this.getY());
+        //if(tp!=null){
+            DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
+            namanode = node.toString();
+            if(node.isLeaf()){
+                if(namanode.equals("Entri Dasar Fee Produk")){
+                    addTab(tabpage, dtdm, new panelEntriFeepp(), null, "Entri Dasar Fee Produk", "Entri Dasar Fee Produk");
+                }
+                if(namanode.equals("Entri Grup Saldo Mitek")){
+                    addTab(tabpage, dtdm, new view.mitek.panelEntriGrupSaldo(), null, "Entri Grup Saldo Mitek", "Entri Grup Saldo Mitek");
+                }
+                
+                if(namanode.equals("Daftar Dasar Fee Produk")){
+                    addTab(tabpage, dtdm, new panelDaftarFeepp(), null, "Daftar Dasar Fee Produk", "Daftar Dasar Fee Produk");
+                }
+            }
+            
+        //}
+    }
+    
     private void menuswitching(){
 
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeMenu.getLastSelectedPathComponent();
@@ -404,9 +429,7 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Entri Utpi Trans")){
                     addTab(tabpage, dtdm, new panelEntriUtpiTrans(), null, "Entri Utpi Trans", "Entri Utpi Trans");
                 }
-                if(namanode.equals("Entri Dasar Fee Produk")){
-                    addTab(tabpage, dtdm, new panelEntriFeepp(), null, "Entri Dasar Fee Produk", "Entri Dasar Fee Produk");
-                }
+                
                 
                 if(namanode.equals("Daftar Akun Deposit")){
                     addTab(tabpage, dtdm, new panelDaftarAkunDeposit(), null, "Daftar Akun Deposit", "Daftar Akun Deposit");
@@ -420,9 +443,7 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Daftar Grup Saldo")){
                     addTab(tabpage, dtdm, new panelDaftarGrupSaldo(), null, "Daftar Grup Saldo", "Daftar Grup Saldo");
                 }
-                if(namanode.equals("Daftar Dasar Fee Produk")){
-                    addTab(tabpage, dtdm, new panelDaftarFeepp(), null, "Daftar Dasar Fee Produk", "Daftar Dasar Fee Produk");
-                }
+                
                 
                 if(namanode.equals("Entri Deposit Switching")){
                     addTab(tabpage, dtdm, new panelEntriDepositSwitching(), null, "Entri Deposit Switching", "Entri Deposit Switching");

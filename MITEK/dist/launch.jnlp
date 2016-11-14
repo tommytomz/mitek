@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="http://localhost/aplikasimitek/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>MITEK</title>
+        <vendor>lenovo</vendor>
+        <homepage href=""/>
+        <description>MITEK</description>
+        <description kind="short">MITEK</description>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="1.8+"/>
+        <jar href="MITEK.jar" main="true"/>
+    <jar href="lib/datatables-core-0.9.1.jar"/>
+<jar href="lib/AbsoluteLayout.jar"/>
+<jar href="lib/jcalendar-1.4.jar"/>
+<jar href="lib/org-netbeans-swing-tabcontrol.jar"/>
+<jar href="lib/org-openide-awt.jar"/>
+<jar href="lib/org-openide-windows.jar"/>
+<jar href="lib/org-openide-util-lookup.jar"/>
+<jar href="lib/org-openide-util.jar"/>
+</resources>
+    <application-desc main-class="mitek.MITEK">
+    </application-desc>
+</jnlp>
