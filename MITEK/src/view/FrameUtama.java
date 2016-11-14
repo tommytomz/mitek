@@ -170,7 +170,7 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Dep Trans");
         treeNode2.add(treeNode3);
-        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Feep");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Dasar Fee Produk");
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Entri Grup Saldo");
         treeNode2.add(treeNode3);
@@ -182,7 +182,7 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Akun Deposit");
         treeNode2.add(treeNode3);
-        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Feep");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Dasar Fee Produk");
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Grup Saldo");
         treeNode2.add(treeNode3);
@@ -396,8 +396,8 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Entri Utpi Trans")){
                     addTab(tabpage, dtdm, new panelEntriUtpiTrans(), null, "Entri Utpi Trans", "Entri Utpi Trans");
                 }
-                if(namanode.equals("Entri Feep")){
-                    addTab(tabpage, dtdm, new panelEntriFeepp(), null, "Entri Feep", "Feep");
+                if(namanode.equals("Entri Dasar Fee Produk")){
+                    addTab(tabpage, dtdm, new panelEntriFeepp(), null, "Entri Dasar Fee Produk", "Entri Dasar Fee Produk");
                 }
                 
                 if(namanode.equals("Daftar Akun Deposit")){
@@ -412,8 +412,8 @@ public class FrameUtama extends javax.swing.JFrame {
                 if(namanode.equals("Daftar Grup Saldo")){
                     addTab(tabpage, dtdm, new panelDaftarGrupSaldo(), null, "Daftar Grup Saldo", "Daftar Grup Saldo");
                 }
-                if(namanode.equals("Daftar Feep")){
-                    addTab(tabpage, dtdm, new panelDaftarFeepp(), null, "Daftar Feep", "Daftar Feep");
+                if(namanode.equals("Daftar Dasar Fee Produk")){
+                    addTab(tabpage, dtdm, new panelDaftarFeepp(), null, "Daftar Dasar Fee Produk", "Daftar Dasar Fee Produk");
                 }
                 
                 if(namanode.equals("Entri Deposit Switching")){
