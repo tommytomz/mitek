@@ -182,6 +182,8 @@ public class FrameUtama extends javax.swing.JFrame {
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Akun Deposit");
         treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Feep");
+        treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Grup Saldo");
         treeNode2.add(treeNode3);
         treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Daftar Switching");
@@ -409,6 +411,9 @@ public class FrameUtama extends javax.swing.JFrame {
                 }
                 if(namanode.equals("Daftar Grup Saldo")){
                     addTab(tabpage, dtdm, new panelDaftarGrupSaldo(), null, "Daftar Grup Saldo", "Daftar Grup Saldo");
+                }
+                if(namanode.equals("Daftar Feep")){
+                    addTab(tabpage, dtdm, new panelDaftarFeepp(), null, "Daftar Feep", "Daftar Feep");
                 }
                 
                 if(namanode.equals("Entri Deposit Switching")){
